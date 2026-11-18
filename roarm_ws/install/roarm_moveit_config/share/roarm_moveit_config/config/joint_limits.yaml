@@ -1,0 +1,25 @@
+# MoveIt 做时间参数化（给路径上每个点分配时间）时用的速度 / 加速度上限
+#
+# 位置上限（lower/upper）MoveIt 直接从 URDF 读；
+# 这里可以覆盖 URDF 里的 velocity，并补充 URDF 没法写的 acceleration。
+# 规划时还会再乘上 velocity/acceleration scaling factor（默认 0.5，见下面）。
+
+default_velocity_scaling_factor: 0.5
+default_acceleration_scaling_factor: 0.5
+
+joint_limits:
+  base_joint:
+    has_velocity_limits: true
+    max_velocity: 1.0          # rad/s，比硬件模拟器的 1.5 rad/s 留出余量
+    has_acceleration_limits: true
+    max_acceleration: 2.0      # rad/s^2
+  shoulder_joint:
+    has_velocity_limits: true
+    max_velocity: 1.0
+    has_acceleration_limits: true
+    max_acceleration: 2.0
+  elbow_joint:
+    has_velocity_limits: true
+    max_velocity: 1.0
+    has_acceleration_limits: true
+    max_acceleration: 2.0

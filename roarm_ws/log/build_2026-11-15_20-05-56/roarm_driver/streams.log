@@ -1,0 +1,29 @@
+[0.720s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_driver': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/python3.10/site-packages:/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build install --record /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/install.log --single-version-externally-managed install_data
+[0.964s] running egg_info
+[0.978s] writing ../../build/roarm_driver/roarm_driver.egg-info/PKG-INFO
+[0.978s] writing dependency_links to ../../build/roarm_driver/roarm_driver.egg-info/dependency_links.txt
+[0.979s] writing entry points to ../../build/roarm_driver/roarm_driver.egg-info/entry_points.txt
+[0.979s] writing requirements to ../../build/roarm_driver/roarm_driver.egg-info/requires.txt
+[0.979s] writing top-level names to ../../build/roarm_driver/roarm_driver.egg-info/top_level.txt
+[1.010s] reading manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'
+[1.011s] writing manifest file '../../build/roarm_driver/roarm_driver.egg-info/SOURCES.txt'
+[1.011s] running build
+[1.011s] running build_py
+[1.011s] copying roarm_driver/backends.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build/lib/roarm_driver
+[1.012s] copying roarm_driver/__init__.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build/lib/roarm_driver
+[1.012s] copying roarm_driver/driver.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build/lib/roarm_driver
+[1.012s] copying roarm_driver/move_client.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build/lib/roarm_driver
+[1.012s] running install
+[1.015s] running install_lib
+[1.031s] running install_data
+[1.031s] copying resource/roarm_driver -> /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/share/ament_index/resource_index/packages
+[1.031s] copying package.xml -> /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/share/roarm_driver
+[1.031s] copying launch/driver.launch.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/share/roarm_driver/launch
+[1.032s] running install_egg_info
+[1.047s] removing '/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/python3.10/site-packages/roarm_driver-0.0.0-py3.10.egg-info' (and everything under it)
+[1.048s] Copying ../../build/roarm_driver/roarm_driver.egg-info to /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/python3.10/site-packages/roarm_driver-0.0.0-py3.10.egg-info
+[1.048s] running install_scripts
+[1.177s] Installing driver script to /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/roarm_driver
+[1.177s] Installing move_client script to /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/roarm_driver
+[1.177s] writing list of installed files to '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/install.log'
+[1.199s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_driver' returned '0': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_driver/lib/python3.10/site-packages:/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/roarm_driver build --build-base /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/build install --record /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_driver/install.log --single-version-externally-managed install_data

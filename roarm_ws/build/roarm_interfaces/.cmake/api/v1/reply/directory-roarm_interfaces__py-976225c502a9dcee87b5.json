@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "roarm_interfaces__py",
+		"source" : "/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces/roarm_interfaces__py"
+	}
+}

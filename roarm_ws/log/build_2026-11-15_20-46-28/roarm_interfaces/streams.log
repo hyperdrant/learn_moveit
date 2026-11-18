@@ -1,0 +1,182 @@
+[0.207s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces': CMAKE_PREFIX_PATH=/home/hyperdrant/roarm_ws_em0/install/ros2web_interfaces:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_cmd:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit:/home/hyperdrant/roarm_ws_em0/install/roarm_description:/home/hyperdrant/roarm_ws_em0/install/moveit_servo:/home/hyperdrant/roarm_ws_em0/install/yolo_face_node:/home/hyperdrant/roarm_ws_em0/install/ros2web_widgets:/home/hyperdrant/roarm_ws_em0/install/ros2web_example_py:/home/hyperdrant/roarm_ws_em0/install/roarm_web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web:/home/hyperdrant/roarm_ws_em0/install/roarm_xyz_control:/home/hyperdrant/roarm_ws_em0/install/roarm_driver:/home/hyperdrant/roarm_ws_em0/install/launch_api:/home/hyperdrant/roarm_ws_em0/install/face_tracker:/home/hyperdrant/roarm_ws_em0/src/install/yolo_face_node:/home/hyperdrant/dev_ws/install/learning_urdf:/home/hyperdrant/dev_ws/install/learning_topic:/home/hyperdrant/dev_ws/install/learning_tf:/home/hyperdrant/dev_ws/install/learning_service:/home/hyperdrant/dev_ws/install/learning_qos:/home/hyperdrant/dev_ws/install/learning_pkg_python:/home/hyperdrant/dev_ws/install/learning_parameter:/home/hyperdrant/dev_ws/install/learning_node:/home/hyperdrant/dev_ws/install/learning_launch:/home/hyperdrant/dev_ws/install/learning_action:/home/hyperdrant/dev_ws/install/learning_gazebo:/home/hyperdrant/dev_ws/install/learning_cv:/home/hyperdrant/dev_ws/install/leaning_pkg_python:/opt/ros/humble:/home/hyperdrant/roarm_ws_em0/install/face_tracker_msgs:/home/hyperdrant/dev_ws/install/learning_topic_cpp:/home/hyperdrant/dev_ws/install/learning_service_cpp:/home/hyperdrant/dev_ws/install/learning_pkg_c:/home/hyperdrant/dev_ws/install/learning_parameter_cpp:/home/hyperdrant/dev_ws/install/learning_node_cpp:/home/hyperdrant/dev_ws/install/learning_action_cpp:/home/hyperdrant/dev_ws/install/learning_interface:/home/hyperdrant/dev_ws/install/leaning_pkg_c /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces -- -j16 -l16
+[0.256s] [  3%] Built target roarm_interfaces__cpp
+[0.257s] [  6%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_generator_c.dir/rosidl_generator_c/roarm_interfaces/action/detail/move_joints__functions.c.o[0m
+[0.266s] [  6%] Built target ament_cmake_python_copy_roarm_interfaces
+[0.276s] [  9%] [32mBuilding CXX object CMakeFiles/roarm_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/roarm_interfaces/action/move_joints__type_support.cpp.o[0m
+[0.277s] [ 16%] [32mBuilding CXX object CMakeFiles/roarm_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/roarm_interfaces/action/detail/move_joints__type_support.cpp.o[0m
+[0.277s] [ 16%] [32mBuilding CXX object CMakeFiles/roarm_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/roarm_interfaces/action/detail/dds_fastrtps/move_joints__type_support.cpp.o[0m
+[0.306s] [ 19%] [32m[1mLinking C shared library libroarm_interfaces__rosidl_generator_c.so[0m
+[0.311s] [ 25%] [32m[1mLinking CXX shared library libroarm_interfaces__rosidl_typesupport_cpp.so[0m
+[0.311s] [ 25%] [32m[1mLinking CXX shared library libroarm_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[0.346s] [ 29%] Built target roarm_interfaces__rosidl_generator_c
+[0.353s] [ 32%] Built target roarm_interfaces__rosidl_typesupport_cpp
+[0.369s] [ 41%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/roarm_interfaces/action/detail/move_joints__type_support.c.o[0m
+[0.369s] [ 41%] [32mBuilding CXX object CMakeFiles/roarm_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/roarm_interfaces/action/detail/move_joints__type_support_c.cpp.o[0m
+[0.369s] [ 41%] [32mBuilding CXX object CMakeFiles/roarm_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/roarm_interfaces/action/move_joints__type_support.cpp.o[0m
+[0.386s] [ 48%] [32m[1mLinking CXX shared library libroarm_interfaces__rosidl_typesupport_c.so[0m
+[0.386s] [ 48%] Built target roarm_interfaces__rosidl_typesupport_introspection_cpp
+[0.396s] [ 51%] [32m[1mLinking CXX shared library libroarm_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.404s] [ 54%] [32m[1mLinking C shared library libroarm_interfaces__rosidl_typesupport_introspection_c.so[0m
+[0.427s] [ 58%] Built target roarm_interfaces__rosidl_typesupport_c
+[0.440s] [ 61%] Built target roarm_interfaces__rosidl_typesupport_introspection_c
+[0.465s] [ 64%] [32m[1mLinking CXX shared library libroarm_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[0.471s] [ 67%] Built target roarm_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.530s] [ 70%] Built target roarm_interfaces__rosidl_typesupport_fastrtps_c
+[0.533s] running egg_info
+[0.548s] writing roarm_interfaces.egg-info/PKG-INFO
+[0.549s] writing dependency_links to roarm_interfaces.egg-info/dependency_links.txt
+[0.549s] writing top-level names to roarm_interfaces.egg-info/top_level.txt
+[0.549s] [ 70%] Built target roarm_interfaces
+[0.569s] [ 74%] Built target roarm_interfaces__py
+[0.590s] [ 77%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_generator_py.dir/rosidl_generator_py/roarm_interfaces/action/_move_joints_s.c.o[0m
+[0.595s] reading manifest file 'roarm_interfaces.egg-info/SOURCES.txt'
+[0.596s] writing manifest file 'roarm_interfaces.egg-info/SOURCES.txt'
+[0.619s] [ 77%] Built target ament_cmake_python_build_roarm_interfaces_egg
+[0.620s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/roarm_interfaces/libroarm_interfaces__rosidl_generator_py.so[0m
+[0.660s] [ 80%] Built target roarm_interfaces__rosidl_generator_py
+[0.681s] [ 90%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[0.681s] [ 90%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[0.681s] [ 90%] [32mBuilding C object CMakeFiles/roarm_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[0.695s] [100%] [32m[1mLinking C shared library rosidl_generator_py/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.695s] [100%] [32m[1mLinking C shared library rosidl_generator_py/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.695s] [100%] [32m[1mLinking C shared library rosidl_generator_py/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.735s] [100%] Built target roarm_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.735s] [100%] Built target roarm_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.735s] [100%] Built target roarm_interfaces__rosidl_typesupport_c__pyext
+[0.746s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/hyperdrant/roarm_ws_em0/install/ros2web_interfaces:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_cmd:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit:/home/hyperdrant/roarm_ws_em0/install/roarm_description:/home/hyperdrant/roarm_ws_em0/install/moveit_servo:/home/hyperdrant/roarm_ws_em0/install/yolo_face_node:/home/hyperdrant/roarm_ws_em0/install/ros2web_widgets:/home/hyperdrant/roarm_ws_em0/install/ros2web_example_py:/home/hyperdrant/roarm_ws_em0/install/roarm_web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web:/home/hyperdrant/roarm_ws_em0/install/roarm_xyz_control:/home/hyperdrant/roarm_ws_em0/install/roarm_driver:/home/hyperdrant/roarm_ws_em0/install/launch_api:/home/hyperdrant/roarm_ws_em0/install/face_tracker:/home/hyperdrant/roarm_ws_em0/src/install/yolo_face_node:/home/hyperdrant/dev_ws/install/learning_urdf:/home/hyperdrant/dev_ws/install/learning_topic:/home/hyperdrant/dev_ws/install/learning_tf:/home/hyperdrant/dev_ws/install/learning_service:/home/hyperdrant/dev_ws/install/learning_qos:/home/hyperdrant/dev_ws/install/learning_pkg_python:/home/hyperdrant/dev_ws/install/learning_parameter:/home/hyperdrant/dev_ws/install/learning_node:/home/hyperdrant/dev_ws/install/learning_launch:/home/hyperdrant/dev_ws/install/learning_action:/home/hyperdrant/dev_ws/install/learning_gazebo:/home/hyperdrant/dev_ws/install/learning_cv:/home/hyperdrant/dev_ws/install/leaning_pkg_python:/opt/ros/humble:/home/hyperdrant/roarm_ws_em0/install/face_tracker_msgs:/home/hyperdrant/dev_ws/install/learning_topic_cpp:/home/hyperdrant/dev_ws/install/learning_service_cpp:/home/hyperdrant/dev_ws/install/learning_pkg_c:/home/hyperdrant/dev_ws/install/learning_parameter_cpp:/home/hyperdrant/dev_ws/install/learning_node_cpp:/home/hyperdrant/dev_ws/install/learning_action_cpp:/home/hyperdrant/dev_ws/install/learning_interface:/home/hyperdrant/dev_ws/install/leaning_pkg_c /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces -- -j16 -l16
+[0.757s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces': CMAKE_PREFIX_PATH=/home/hyperdrant/roarm_ws_em0/install/ros2web_interfaces:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_cmd:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit:/home/hyperdrant/roarm_ws_em0/install/roarm_description:/home/hyperdrant/roarm_ws_em0/install/moveit_servo:/home/hyperdrant/roarm_ws_em0/install/yolo_face_node:/home/hyperdrant/roarm_ws_em0/install/ros2web_widgets:/home/hyperdrant/roarm_ws_em0/install/ros2web_example_py:/home/hyperdrant/roarm_ws_em0/install/roarm_web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web:/home/hyperdrant/roarm_ws_em0/install/roarm_xyz_control:/home/hyperdrant/roarm_ws_em0/install/roarm_driver:/home/hyperdrant/roarm_ws_em0/install/launch_api:/home/hyperdrant/roarm_ws_em0/install/face_tracker:/home/hyperdrant/roarm_ws_em0/src/install/yolo_face_node:/home/hyperdrant/dev_ws/install/learning_urdf:/home/hyperdrant/dev_ws/install/learning_topic:/home/hyperdrant/dev_ws/install/learning_tf:/home/hyperdrant/dev_ws/install/learning_service:/home/hyperdrant/dev_ws/install/learning_qos:/home/hyperdrant/dev_ws/install/learning_pkg_python:/home/hyperdrant/dev_ws/install/learning_parameter:/home/hyperdrant/dev_ws/install/learning_node:/home/hyperdrant/dev_ws/install/learning_launch:/home/hyperdrant/dev_ws/install/learning_action:/home/hyperdrant/dev_ws/install/learning_gazebo:/home/hyperdrant/dev_ws/install/learning_cv:/home/hyperdrant/dev_ws/install/leaning_pkg_python:/opt/ros/humble:/home/hyperdrant/roarm_ws_em0/install/face_tracker_msgs:/home/hyperdrant/dev_ws/install/learning_topic_cpp:/home/hyperdrant/dev_ws/install/learning_service_cpp:/home/hyperdrant/dev_ws/install/learning_pkg_c:/home/hyperdrant/dev_ws/install/learning_parameter_cpp:/home/hyperdrant/dev_ws/install/learning_node_cpp:/home/hyperdrant/dev_ws/install/learning_action_cpp:/home/hyperdrant/dev_ws/install/learning_interface:/home/hyperdrant/dev_ws/install/leaning_pkg_c /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces
+[0.764s] -- Install configuration: ""
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/ament_index/resource_index/rosidl_interfaces/roarm_interfaces
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/move_joints.h
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__functions.h
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__functions.c
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__type_support.h
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__struct.h
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/library_path.sh
+[0.765s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/library_path.dsv
+[0.765s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_generator_c.so
+[0.766s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_generator_c.so" to ""
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__rosidl_typesupport_fastrtps_c.h
+[0.766s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.766s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[0.766s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__type_support.c
+[0.767s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__rosidl_typesupport_introspection_c.h
+[0.767s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_introspection_c.so
+[0.767s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[0.767s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_c.so
+[0.768s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_c.so" to ""
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/move_joints.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__struct.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__builder.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__traits.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__type_support.hpp
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.768s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg
+[0.769s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.769s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.769s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.769s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/dds_fastrtps
+[0.769s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__rosidl_typesupport_fastrtps_cpp.hpp
+[0.769s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.769s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[0.770s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces
+[0.770s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action
+[0.770s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail
+[0.770s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__rosidl_typesupport_introspection_cpp.hpp
+[0.770s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/include/roarm_interfaces/roarm_interfaces/action/detail/move_joints__type_support.cpp
+[0.770s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.771s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[0.771s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_cpp.so
+[0.771s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_typesupport_cpp.so" to ""
+[0.771s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/pythonpath.sh
+[0.771s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/pythonpath.dsv
+[0.771s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces-0.0.0-py3.10.egg-info
+[0.771s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.771s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.772s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.772s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.772s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces
+[0.772s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_c.c
+[0.772s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.772s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/__init__.py
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/action
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/action/__init__.py
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/action/_move_joints.py
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/action/_move_joints_s.c
+[0.773s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/libroarm_interfaces__rosidl_generator_py.so
+[0.773s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.773s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.773s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/_roarm_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.858s] Listing '/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces'...
+[0.858s] Listing '/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/action'...
+[0.862s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.862s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.862s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.863s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.863s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.863s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/local/lib/python3.10/dist-packages/roarm_interfaces/roarm_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[0.863s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_generator_py.so
+[0.864s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/lib/libroarm_interfaces__rosidl_generator_py.so" to ""
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/action/MoveJoints.idl
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/action/MoveJoints.action
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/ament_index/resource_index/package_run_dependencies/roarm_interfaces
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/ament_index/resource_index/parent_prefix_path/roarm_interfaces
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/ament_prefix_path.sh
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/ament_prefix_path.dsv
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/path.sh
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/environment/path.dsv
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/local_setup.bash
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/local_setup.sh
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/local_setup.zsh
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/local_setup.dsv
+[0.864s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/package.dsv
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/ament_index/resource_index/packages/roarm_interfaces
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_generator_cExport.cmake
+[0.864s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_cExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_generator_cppExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_cppExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_generator_pyExport.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/export_roarm_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.865s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfacesConfig.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/cmake/roarm_interfacesConfig-version.cmake
+[0.866s] -- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces/share/roarm_interfaces/package.xml
+[0.868s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/hyperdrant/roarm_ws_em0/install/ros2web_interfaces:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_ikfast_plugins:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit_cmd:/home/hyperdrant/roarm_ws_em0/install/roarm_moveit:/home/hyperdrant/roarm_ws_em0/install/roarm_description:/home/hyperdrant/roarm_ws_em0/install/moveit_servo:/home/hyperdrant/roarm_ws_em0/install/yolo_face_node:/home/hyperdrant/roarm_ws_em0/install/ros2web_widgets:/home/hyperdrant/roarm_ws_em0/install/ros2web_example_py:/home/hyperdrant/roarm_ws_em0/install/roarm_web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web_app:/home/hyperdrant/roarm_ws_em0/install/ros2web:/home/hyperdrant/roarm_ws_em0/install/roarm_xyz_control:/home/hyperdrant/roarm_ws_em0/install/roarm_driver:/home/hyperdrant/roarm_ws_em0/install/launch_api:/home/hyperdrant/roarm_ws_em0/install/face_tracker:/home/hyperdrant/roarm_ws_em0/src/install/yolo_face_node:/home/hyperdrant/dev_ws/install/learning_urdf:/home/hyperdrant/dev_ws/install/learning_topic:/home/hyperdrant/dev_ws/install/learning_tf:/home/hyperdrant/dev_ws/install/learning_service:/home/hyperdrant/dev_ws/install/learning_qos:/home/hyperdrant/dev_ws/install/learning_pkg_python:/home/hyperdrant/dev_ws/install/learning_parameter:/home/hyperdrant/dev_ws/install/learning_node:/home/hyperdrant/dev_ws/install/learning_launch:/home/hyperdrant/dev_ws/install/learning_action:/home/hyperdrant/dev_ws/install/learning_gazebo:/home/hyperdrant/dev_ws/install/learning_cv:/home/hyperdrant/dev_ws/install/leaning_pkg_python:/opt/ros/humble:/home/hyperdrant/roarm_ws_em0/install/face_tracker_msgs:/home/hyperdrant/dev_ws/install/learning_topic_cpp:/home/hyperdrant/dev_ws/install/learning_service_cpp:/home/hyperdrant/dev_ws/install/learning_pkg_c:/home/hyperdrant/dev_ws/install/learning_parameter_cpp:/home/hyperdrant/dev_ws/install/learning_node_cpp:/home/hyperdrant/dev_ws/install/learning_action_cpp:/home/hyperdrant/dev_ws/install/learning_interface:/home/hyperdrant/dev_ws/install/leaning_pkg_c /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces

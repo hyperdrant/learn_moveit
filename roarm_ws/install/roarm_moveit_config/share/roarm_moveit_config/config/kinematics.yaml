@@ -1,0 +1,12 @@
+# 逆运动学（IK）求解器：根据末端位姿反算关节角
+#
+# Week 4 只做 joint-space planning，用不到 IK。
+# 这里先配好，是为了 RViz 里拖动末端的交互标记能工作，也为下一步 Cartesian 规划做准备。
+#
+# 注意：这台臂只有 3 个自由度，不可能满足任意 6 维位姿（位置 + 姿态），
+# 所以打开 position_only_ik：只要求末端位置对，不管朝向。
+arm:
+  kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+  kinematics_solver_search_resolution: 0.005
+  kinematics_solver_timeout: 0.05
+  position_only_ik: true

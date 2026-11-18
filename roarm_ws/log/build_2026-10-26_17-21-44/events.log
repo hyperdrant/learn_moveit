@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000500] (-) JobUnselected: {'identifier': 'my_arm_description'}
+[0.000530] (-) JobUnselected: {'identifier': 'roarm_driver'}
+[0.000550] (roarm_interfaces) JobQueued: {'identifier': 'roarm_interfaces', 'dependencies': OrderedDict()}
+[0.000567] (roarm_interfaces) JobStarted: {'identifier': 'roarm_interfaces'}
+[0.010696] (roarm_interfaces) JobProgress: {'identifier': 'roarm_interfaces', 'progress': 'cmake'}
+[0.011106] (roarm_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_interfaces'], 'cwd': '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces', 'env': OrderedDict([('ELECTRON_PA_APP_NAME', 'Claude'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('EGL_PLATFORM', 'wayland'), ('USE_LOCAL_OAUTH', ''), ('CLAUDE_CODE_TERMINAL_MCP_TOOLS', 'mcp__ccd_turn__wrap_up'), ('AI_AGENT', 'claude-code_2-1-308_agent'), ('LANGUAGE', 'en_US:en'), ('USER', 'hyperdrant'), ('CLAUDE_CODE_ENTRYPOINT', 'claude-desktop'), ('LC_TIME', 'de_DE.UTF-8'), ('GIT_EDITOR', 'true'), ('CLAUDE_CODE_EAGER_FLUSH', '1'), ('XDG_SESSION_TYPE', 'wayland'), ('CLAUDE_AGENT_SDK_VERSION', '0.3.308'), ('CLAUDE_CODE_SESSION_ATTENDED', '1'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('CLAUDE_CODE_MESSAGING_TOKEN', '8db36dc28aca8d6a346b58516bf2ec24'), ('HOME', '/home/hyperdrant'), ('CHROME_DESKTOP', 'com.anthropic.Claude.desktop'), ('DISABLE_MICROCOMPACT', '1'), ('OLDPWD', '/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_interfaces'), ('USE_STAGING_OAUTH', ''), ('DESKTOP_SESSION', 'ubuntu'), ('CLAUDE_CODE_DESKTOP_APP_VERSION', '3.6556.2'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/hyperdrant/.local/share/applications/com.anthropic.Claude.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('LC_MONETARY', 'de_DE.UTF-8'), ('MANAGERPID', '3980'), ('SYSTEMD_EXEC_PID', '4182'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6667'), ('CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH', '1'), ('CLAUDE_CODE_HOST_SESSION_ID', 'local_87093630-872f-4a7a-9178-1f5c061e99f2'), ('BAGGAGE', 'sentry-environment=production,sentry-release=Claude%403.6556.2,sentry-public_key=2f98127cbffe4740b1f767a2de77d23b,sentry-trace_id=1f7bdaeceb5349dea97498f8019f49eb,sentry-org_id=1158394'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('API_TIMEOUT_MS', '900000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hyperdrant'), ('CLAUDE_CODE_SIMPLE', '0'), ('PYTHONDONTWRITEBYTECODE', '1'), ('CLAUDE_CODE_EMIT_STARTUP_TIMING', '1'), ('JOURNAL_STREAM', '8:29702'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hyperdrant'), ('ANTHROPIC_BASE_URL', 'https://api.anthropic.com'), ('CLAUDE_CODE_ENABLE_ASK_USER_QUESTION_TOOL', 'true'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('CLAUDE_CODE_USER_EMAIL', 'sas573920@gmail.com'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('CLAUDE_CODE_ACCOUNT_UUID', 'b85bfffc-922d-420c-be3c-1978fb4065b0'), ('CLAUDE_CODE_REPORT_FINDINGS', '1'), ('CLAUDE_AGENT_SDK_MCP_NO_PREFIX', '0'), ('MCP_CONNECTION_NONBLOCKING', 'true'), ('PATH', '/usr/lib/ccache:/home/hyperdrant/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/hyperdrant/.local/bin:/usr/lib/ccache:/usr/local/cuda-11.7/bin:/home/hyperdrant/.pyenv/shims:/home/hyperdrant/.pyenv/bin:/opt/ros/humble/bin:/home/hyperdrant/anaconda3/condabin:/usr/lib/ccache:/home/hyperdrant/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/hyperdrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/hyperdrant/ardupilot/Tools/autotest:/home/hyperdrant/.local/bin'), ('SESSION_MANAGER', 'local/hyperdrant-laptop:@/tmp/.ICE-unix/4153,unix/hyperdrant-laptop:/tmp/.ICE-unix/4153'), ('INVOCATION_ID', '4ac7cafc772941499c034c3dbe6164c8'), ('PAPERSIZE', 'a4'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_CODE_ORGANIZATION_UUID', 'b4d3a28e-e3f4-4ebc-9c02-cad82669c386'), ('CLAUDE_EFFORT', 'medium'), ('DISPLAY', ':0'), ('MCP_SERVER_CONNECTION_BATCH_SIZE', '8'), ('CLAUDE_PID', '11532'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZUBAX3'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('CLAUDE_CODE_STARTUP_FAILURE_RESULTS', '1'), ('QT_ACCESSIBILITY', '1'), ('CLAUDE_PREVIEW_CLASSIFIER_FLOOR', '1'), ('CLAUDE_CODE_DISABLE_TERMINAL_TITLE', '1'), ('GDMSESSION', 'ubuntu'), ('CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES', 'false'), ('CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING', 'true'), ('CLAUDE_CODE_SESSION_ID', '25e8a54a-2c9d-4b4c-b77c-9cb0bcfa741e'), ('CLAUDE_CODE_DISABLE_CRON', ''), ('NODE_USE_SYSTEM_CA', '1'), ('CLAUDECODE', '1'), ('CLAUDE_CODE_OAUTH_SCOPES', 'user:inference user:file_upload user:profile user:sessions:claude_code user:plugins'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces'), ('DISABLE_AUTOUPDATER', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/home/hyperdrant/.config/Claude/claude-code/2.1.308/f8b3641a8d36/claude'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CLAUDE_CODE_MESSAGING_SOCKET', '/run/user/1000/cc-socks/11532.sock'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099842] (-) TimerEvent: {}
+[0.113526] (roarm_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.196531] (roarm_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199915] (-) TimerEvent: {}
+[0.208860] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.266708] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.272158] (roarm_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.272593] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.273277] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.276005] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300020] (-) TimerEvent: {}
+[0.337039] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.342243] (roarm_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.342474] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.342863] (roarm_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.347132] (roarm_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400132] (-) TimerEvent: {}
+[0.500331] (-) TimerEvent: {}
+[0.600531] (-) TimerEvent: {}
+[0.700715] (-) TimerEvent: {}
+[0.800894] (-) TimerEvent: {}
+[0.901114] (-) TimerEvent: {}
+[1.001307] (-) TimerEvent: {}
+[1.073293] (roarm_interfaces) StdoutLine: {'line': b'-- Found Python3: /home/hyperdrant/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.101412] (-) TimerEvent: {}
+[1.201607] (-) TimerEvent: {}
+[1.234216] (roarm_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.238200] (roarm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.245863] (roarm_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.291884] (roarm_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.301678] (-) TimerEvent: {}
+[1.401850] (-) TimerEvent: {}
+[1.502041] (-) TimerEvent: {}
+[1.602225] (-) TimerEvent: {}
+[1.691705] (roarm_interfaces) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.691897] (roarm_interfaces) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>\n'}
+[1.691960] (roarm_interfaces) StderrLine: {'line': b'    from catkin_pkg.package import parse_package_string\n'}
+[1.692011] (roarm_interfaces) StderrLine: {'line': b"ModuleNotFoundError: No module named 'catkin_pkg'\n"}
+[1.694607] (roarm_interfaces) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[1.694711] (roarm_interfaces) StderrLine: {'line': b'  execute_process(/home/hyperdrant/.pyenv/shims/python3\n'}
+[1.694760] (roarm_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.694891] (roarm_interfaces) StderrLine: {'line': b'  /home/hyperdrant/learning_ros2/roarm_ws/src/roarm_interfaces/package.xml\n'}
+[1.694949] (roarm_interfaces) StderrLine: {'line': b'  /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces/ament_cmake_core/package.cmake)\n'}
+[1.694989] (roarm_interfaces) StderrLine: {'line': b'  returned error code 1\n'}
+[1.695028] (roarm_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.695067] (roarm_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.695106] (roarm_interfaces) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)\n'}
+[1.695173] (roarm_interfaces) StderrLine: {'line': b'  CMakeLists.txt:13 (rosidl_generate_interfaces)\n'}
+[1.695216] (roarm_interfaces) StderrLine: {'line': b'\n'}
+[1.695255] (roarm_interfaces) StderrLine: {'line': b'\n'}
+[1.695293] (roarm_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.695335] (roarm_interfaces) StdoutLine: {'line': b'See also "/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.701318] (roarm_interfaces) CommandEnded: {'returncode': 1}
+[1.702359] (-) TimerEvent: {}
+[1.724712] (roarm_interfaces) JobEnded: {'identifier': 'roarm_interfaces', 'rc': 1}
+[1.735761] (-) EventReactorShutdown: {}

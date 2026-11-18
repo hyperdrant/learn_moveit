@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+  SRDF（Semantic Robot Description Format）：URDF 的"语义补充"
+
+  URDF 描述机器人"长什么样"（link、joint、几何）；
+  SRDF 描述"怎么用它"：
+    - group：哪些关节组成一个可以一起规划的整体（规划组）
+    - group_state：给常用姿态起名字，代码里可以直接用名字作为目标
+    - disable_collisions：哪些 link 对永远不需要检查碰撞（相邻的 link 本来就贴在一起）
+
+  name 必须和 URDF 的 robot name 一致（roarm.urdf.xacro 里是 "roarm"）
+-->
+<robot name="roarm">
+
+    <!-- 规划组 arm：从 base_link 到 tool0 这条运动链上的所有关节
+         （base_joint, shoulder_joint, elbow_joint；固定关节 tool_joint 自动忽略） -->
+    <group name="arm">
+        <chain base_link="base_link" tip_link="tool0"/>
+    </group>
+
+    <!-- 命名姿态 -->
+    <group_state name="home" group="arm">
+        <!-- 固件 {"T":100} 的初始位姿：大臂竖直、小臂水平朝前 -->
+        <joint name="base_joint" value="0"/>
+        <joint name="shoulder_joint" value="0"/>
+        <joint name="elbow_joint" value="1.5708"/>
+    </group_state>
+    <group_state name="upright" group="arm">
+        <!-- 全部为 0：大臂、小臂都竖直朝上 -->
+        <joint name="base_joint" value="0"/>
+        <joint name="shoulder_joint" value="0"/>
+        <joint name="elbow_joint" value="0"/>
+    </group_state>
+    <group_state name="reach_left" group="arm">
+        <joint name="base_joint" value="1.5708"/>
+        <joint name="shoulder_joint" value="0.6"/>
+        <joint name="elbow_joint" value="1.2"/>
+    </group_state>
+
+    <!-- 碰撞检测白名单
+         Adjacent：相邻 link 在关节处本来就接触，检查了只会永远报碰撞
+         Never：任何姿态下几何上都不可能碰到，跳过可以加快规划
+         没写在这里的 link 对（例如 forearm 和 base_link / turntable）会被检查，
+         这样 MoveIt 就不会规划出小臂撞到底座的路径 -->
+    <disable_collisions link1="base_link" link2="turntable" reason="Adjacent"/>
+    <disable_collisions link1="turntable" link2="upper_arm" reason="Adjacent"/>
+    <disable_collisions link1="upper_arm" link2="forearm" reason="Adjacent"/>
+    <disable_collisions link1="base_link" link2="upper_arm" reason="Never"/>
+
+</robot>

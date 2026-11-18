@@ -1,0 +1,31 @@
+[0.709s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/src/my_arm_description': PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_arm_description build --build-base /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build install --record /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/install.log --single-version-externally-managed install_data
+[0.957s] running egg_info
+[0.972s] writing ../../build/my_arm_description/my_arm_description.egg-info/PKG-INFO
+[0.973s] writing dependency_links to ../../build/my_arm_description/my_arm_description.egg-info/dependency_links.txt
+[0.973s] writing entry points to ../../build/my_arm_description/my_arm_description.egg-info/entry_points.txt
+[0.974s] writing requirements to ../../build/my_arm_description/my_arm_description.egg-info/requires.txt
+[0.974s] writing top-level names to ../../build/my_arm_description/my_arm_description.egg-info/top_level.txt
+[1.006s] reading manifest file '../../build/my_arm_description/my_arm_description.egg-info/SOURCES.txt'
+[1.008s] writing manifest file '../../build/my_arm_description/my_arm_description.egg-info/SOURCES.txt'
+[1.008s] running build
+[1.008s] running build_py
+[1.008s] copying my_arm_description/fk_check.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+[1.008s] copying my_arm_description/joint_state_pub.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+[1.009s] copying my_arm_description/__init__.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+[1.009s] running install
+[1.013s] running install_lib
+[1.031s] running install_data
+[1.031s] copying resource/my_arm_description -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/ament_index/resource_index/packages
+[1.031s] copying package.xml -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description
+[1.031s] copying launch/display.launch.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/launch
+[1.032s] copying urdf/two_link_arm.urdf -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/urdf
+[1.032s] copying urdf/three_dof_arm.urdf -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/urdf
+[1.032s] copying rviz/display.rviz -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/rviz
+[1.032s] running install_egg_info
+[1.049s] removing '/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description-0.0.0-py3.10.egg-info' (and everything under it)
+[1.049s] Copying ../../build/my_arm_description/my_arm_description.egg-info to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description-0.0.0-py3.10.egg-info
+[1.050s] running install_scripts
+[1.195s] Installing fk_check script to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/my_arm_description
+[1.195s] Installing joint_state_pub script to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/my_arm_description
+[1.195s] writing list of installed files to '/home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/install.log'
+[1.223s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/src/my_arm_description' returned '0': PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_arm_description build --build-base /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build install --record /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/install.log --single-version-externally-managed install_data

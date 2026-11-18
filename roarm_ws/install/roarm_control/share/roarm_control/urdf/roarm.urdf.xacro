@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+  机械臂几何结构 + ros2_control 配置
+
+  几何结构直接复用 my_arm_description/urdf/three_dof_arm.urdf；
+  这里只额外加一个 <ros2_control> 标签，告诉 controller_manager：
+    - 用哪个硬件插件（RoArmHardware）
+    - 硬件有哪些关节，每个关节有哪些 command / state interface
+
+  用法：xacro roarm.urdf.xacro sim:=false port:=/dev/ttyUSB0
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="roarm">
+
+    <xacro:arg name="sim" default="true"/>
+    <xacro:arg name="port" default="/dev/ttyUSB0"/>
+
+    <xacro:include filename="$(find my_arm_description)/urdf/three_dof_arm.urdf"/>
+
+    <xacro:macro name="arm_joint" params="name">
+        <joint name="${name}">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </xacro:macro>
+
+    <ros2_control name="RoArmM2" type="system">
+        <hardware>
+            <plugin>roarm_control/RoArmHardware</plugin>
+            <param name="sim">$(arg sim)</param>
+            <param name="sim_max_velocity">1.5</param>
+            <param name="port">$(arg port)</param>
+            <param name="baudrate">115200</param>
+            <param name="feedback_rate">20.0</param>
+        </hardware>
+
+        <xacro:arm_joint name="base_joint"/>
+        <xacro:arm_joint name="shoulder_joint"/>
+        <xacro:arm_joint name="elbow_joint"/>
+    </ros2_control>
+
+</robot>

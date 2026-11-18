@@ -1,0 +1,86 @@
+[0.012s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hyperdrant/learning_ros2/roarm_ws/src/roarm_control -DCMAKE_INSTALL_PREFIX=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control
+[0.123s] -- The C compiler identification is GNU 11.4.0
+[0.206s] -- The CXX compiler identification is GNU 11.4.0
+[0.219s] -- Detecting C compiler ABI info
+[0.279s] -- Detecting C compiler ABI info - done
+[0.284s] -- Check for working C compiler: /usr/lib/ccache/cc - skipped
+[0.284s] -- Detecting C compile features
+[0.285s] -- Detecting C compile features - done
+[0.288s] -- Detecting CXX compiler ABI info
+[0.350s] -- Detecting CXX compiler ABI info - done
+[0.355s] -- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+[0.355s] -- Detecting CXX compile features
+[0.356s] -- Detecting CXX compile features - done
+[0.360s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.916s] -- Found Python3: /home/hyperdrant/.pyenv/shims/python3 (found version "3.10.12") found components: Interpreter 
+[1.055s] -- Found hardware_interface: 2.53.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.103s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.109s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.119s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.134s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.371s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.374s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.403s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.459s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.462s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.475s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.478s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.485s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.495s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.506s] -- Looking for pthread.h
+[1.596s] -- Looking for pthread.h - found
+[1.597s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.681s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.682s] -- Found Threads: TRUE  
+[1.731s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.847s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.848s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_control/include>
+[1.848s] -- Configured cppcheck exclude dirs and/or files: 
+[1.848s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.849s] -- Added test 'lint_cmake' to check CMake code style
+[1.849s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.850s] -- Added test 'uncrustify' to check C / C++ code style
+[1.850s] -- Configured uncrustify additional arguments: 
+[1.851s] -- Added test 'xmllint' to check XML markup files
+[1.853s] -- Configuring done
+[1.864s] -- Generating done
+[1.867s] -- Build files have been written to: /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control
+[1.876s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control' returned '0': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hyperdrant/learning_ros2/roarm_ws/src/roarm_control -DCMAKE_INSTALL_PREFIX=/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control
+[1.878s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control -- -j16 -l16
+[1.927s] [ 50%] Building CXX object CMakeFiles/roarm_hardware.dir/src/roarm_hardware.cpp.o
+[5.220s] [100%] Linking CXX shared library libroarm_hardware.so
+[5.397s] [100%] Built target roarm_hardware
+[5.407s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control' returned '0': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control -- -j16 -l16
+[5.416s] Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control
+[5.423s] -- Install configuration: ""
+[5.423s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/roarm_hardware.xml
+[5.423s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/lib/libroarm_hardware.so
+[5.424s] -- Set runtime path of "/home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/lib/libroarm_hardware.so" to ""
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include/roarm_control
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include/roarm_control/roarm_hardware.hpp
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/urdf
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/urdf/roarm.urdf.xacro
+[5.424s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/config
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/config/controllers.yaml
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/launch
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/launch/control.launch.py
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/lib/roarm_control/send_trajectory.py
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/package_run_dependencies/roarm_control
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/parent_prefix_path/roarm_control
+[5.425s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/ament_prefix_path.sh
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/ament_prefix_path.dsv
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/path.sh
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/path.dsv
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.bash
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.sh
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.zsh
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.dsv
+[5.426s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/package.dsv
+[5.427s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/packages/roarm_control
+[5.427s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/roarm_control
+[5.427s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/cmake/roarm_controlConfig.cmake
+[5.427s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/cmake/roarm_controlConfig-version.cmake
+[5.427s] -- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/package.xml
+[5.429s] Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control' returned '0': AMENT_PREFIX_PATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_control

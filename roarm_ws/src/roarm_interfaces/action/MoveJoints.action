@@ -1,0 +1,26 @@
+# 让机械臂关节在指定时间内运动到目标角度
+#
+# .action 文件由三部分组成，用 --- 分隔：Goal / Result / Feedback
+
+# ===== Goal：客户端发来的请求 =====
+# 关节名，必须是驱动认识的名字：base_joint, shoulder_joint, elbow_joint, hand_joint
+# 可以只给其中一部分，没给的关节保持不动
+string[] joint_names
+# 目标角度，单位 rad，和 joint_names 一一对应
+float64[] positions
+# 期望用时，单位 s；<= 0 表示由驱动按参数 default_speed 自动计算
+float64 duration
+---
+# ===== Result：动作结束时返回一次 =====
+bool success
+string message
+# 结束时各关节的实际角度（顺序同 joint_names）
+float64[] final_positions
+# 结束时与目标的最大误差，单位 rad
+float64 max_error
+---
+# ===== Feedback：执行过程中持续发送 =====
+# 当前实际角度（顺序同 joint_names）
+float64[] current_positions
+# 进度 0.0 ~ 1.0
+float64 progress

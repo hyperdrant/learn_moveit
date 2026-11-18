@@ -1,0 +1,38 @@
+running egg_info
+creating ../../build/my_arm_description/my_arm_description.egg-info
+writing ../../build/my_arm_description/my_arm_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_arm_description/my_arm_description.egg-info/dependency_links.txt
+writing entry points to ../../build/my_arm_description/my_arm_description.egg-info/entry_points.txt
+writing requirements to ../../build/my_arm_description/my_arm_description.egg-info/requires.txt
+writing top-level names to ../../build/my_arm_description/my_arm_description.egg-info/top_level.txt
+writing manifest file '../../build/my_arm_description/my_arm_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_arm_description/my_arm_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_arm_description/my_arm_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+copying my_arm_description/fk_check.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+copying my_arm_description/joint_state_pub.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+copying my_arm_description/__init__.py -> /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description
+running install
+running install_lib
+creating /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description
+copying /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description/fk_check.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description
+copying /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description/joint_state_pub.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description
+copying /home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/build/lib/my_arm_description/__init__.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description
+running install_data
+creating /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/ament_index/resource_index/packages
+copying resource/my_arm_description -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/ament_index/resource_index/packages
+copying package.xml -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description
+creating /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/launch
+copying launch/display.launch.py -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/launch
+creating /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/urdf
+copying urdf/two_link_arm.urdf -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/urdf
+creating /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/rviz
+copying rviz/display.rviz -> /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/share/my_arm_description/rviz
+running install_egg_info
+Copying ../../build/my_arm_description/my_arm_description.egg-info to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/python3.10/site-packages/my_arm_description-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fk_check script to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/my_arm_description
+Installing joint_state_pub script to /home/hyperdrant/learning_ros2/roarm_ws/install/my_arm_description/lib/my_arm_description
+writing list of installed files to '/home/hyperdrant/learning_ros2/roarm_ws/build/my_arm_description/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+driver = roarm_driver.driver:main
+move_client = roarm_driver.move_client:main

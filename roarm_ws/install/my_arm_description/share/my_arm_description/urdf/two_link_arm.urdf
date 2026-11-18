@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+  平面二连杆机械臂（学习用）
+
+  Kinematic Tree:
+    base_link
+       ↓ joint1 (revolute, 绕 z)
+    link1          L1 = 0.2 m
+       ↓ joint2 (revolute, 绕 z)
+    link2          L2 = 0.2 m
+       ↓ tool_joint (fixed)
+    tool0          末端点（link2 的尖端）
+
+  注意：link2 坐标系的原点在 joint2 处，而不是杆的末端。
+  所以 FK 公式 x = L1 cos q1 + L2 cos(q1+q2) 对应的是 tool0，不是 link2。
+-->
+<robot name="two_link_arm">
+
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+    <material name="blue">
+        <color rgba="0.2 0.4 0.9 1.0"/>
+    </material>
+    <material name="orange">
+        <color rgba="1.0 0.5 0.1 1.0"/>
+    </material>
+
+    <!-- ======================== -->
+    <!-- Base -->
+    <!-- ======================== -->
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.05"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Joint 1 -->
+    <!-- ======================== -->
+
+    <joint name="joint1" type="revolute">
+        <parent link="base_link"/>
+        <child link="link1"/>
+        <origin xyz="0 0 0.025" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+
+    <!-- ======================== -->
+    <!-- Link 1 -->
+    <!-- ======================== -->
+
+    <link name="link1">
+        <visual>
+            <!-- 杆的几何中心在 x=0.1，所以杆从 x=0 延伸到 x=0.2 -->
+            <origin xyz="0.1 0 0"/>
+            <geometry>
+                <box size="0.2 0.03 0.03"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Joint 2 -->
+    <!-- ======================== -->
+
+    <joint name="joint2" type="revolute">
+        <parent link="link1"/>
+        <child link="link2"/>
+        <!-- joint2 位于 link1 的末端：x = L1 = 0.2 -->
+        <origin xyz="0.2 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-2.5" upper="2.5" effort="10" velocity="1.0"/>
+    </joint>
+
+    <!-- ======================== -->
+    <!-- Link 2 -->
+    <!-- ======================== -->
+
+    <link name="link2">
+        <visual>
+            <origin xyz="0.1 0 0"/>
+            <geometry>
+                <box size="0.2 0.03 0.03"/>
+            </geometry>
+            <material name="orange"/>
+        </visual>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Tool (末端执行器坐标系) -->
+    <!-- ======================== -->
+
+    <joint name="tool_joint" type="fixed">
+        <parent link="link2"/>
+        <child link="tool0"/>
+        <origin xyz="0.2 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="tool0"/>
+
+</robot>

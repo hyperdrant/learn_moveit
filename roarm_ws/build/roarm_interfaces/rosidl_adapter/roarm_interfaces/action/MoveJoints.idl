@@ -1,0 +1,53 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from roarm_interfaces/action/MoveJoints.action
+// generated code does not contain a copyright notice
+
+
+module roarm_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "让机械臂关节在指定时间内运动到目标角度" "\n"
+      "" "\n"
+      ".action 文件由三部分组成，用 --- 分隔：Goal / Result / Feedback")
+    struct MoveJoints_Goal {
+      @verbatim (language="comment", text=
+        "===== Goal：客户端发来的请求 =====" "\n"
+        "关节名，必须是驱动认识的名字：base_joint, shoulder_joint, elbow_joint, hand_joint" "\n"
+        "可以只给其中一部分，没给的关节保持不动")
+      sequence<string> joint_names;
+
+      @verbatim (language="comment", text=
+        "目标角度，单位 rad，和 joint_names 一一对应")
+      sequence<double> positions;
+
+      @verbatim (language="comment", text=
+        "期望用时，单位 s；<= 0 表示由驱动按参数 default_speed 自动计算")
+      double duration;
+    };
+    @verbatim (language="comment", text=
+      "===== Result：动作结束时返回一次 =====")
+    struct MoveJoints_Result {
+      boolean success;
+
+      string message;
+
+      @verbatim (language="comment", text=
+        "结束时各关节的实际角度（顺序同 joint_names）")
+      sequence<double> final_positions;
+
+      @verbatim (language="comment", text=
+        "结束时与目标的最大误差，单位 rad")
+      double max_error;
+    };
+    @verbatim (language="comment", text=
+      "===== Feedback：执行过程中持续发送 =====" "\n"
+      "当前实际角度（顺序同 joint_names）")
+    struct MoveJoints_Feedback {
+      sequence<double> current_positions;
+
+      @verbatim (language="comment", text=
+        "进度 0.0 ~ 1.0")
+      double progress;
+    };
+  };
+};

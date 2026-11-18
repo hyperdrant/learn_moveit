@@ -1,0 +1,50 @@
+# controller_manager 和各个 controller 的参数
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz：每秒执行多少次 read → update → write
+
+    # 声明有哪些 controller 可用（类型 = pluginlib 插件名），
+    # 真正加载、激活由 launch 里的 spawner 完成
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+# 把所有 state interface 发布成 /joint_states，不需要额外配置
+joint_state_broadcaster:
+  ros__parameters: {}
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - base_joint
+      - shoulder_joint
+      - elbow_joint
+
+    # 往硬件写 position 命令，从硬件读 position + velocity 状态
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+
+    # 轨迹点之间用样条插值，所以发几个稀疏的点也能走出平滑的运动
+    interpolation_method: splines
+
+    # 轨迹必须包含全部 3 个关节
+    allow_partial_joints_goal: false
+
+    constraints:
+      # 轨迹执行结束后，最多再等多久让关节进入 goal 容差
+      goal_time: 1.0
+      stopped_velocity_tolerance: 0.05
+      base_joint:
+        trajectory: 0.3   # 执行过程中实际值偏离期望值超过它就中止（rad）
+        goal: 0.02        # 结束时必须进入的容差（rad）
+      shoulder_joint:
+        trajectory: 0.3
+        goal: 0.02
+      elbow_joint:
+        trajectory: 0.3
+        goal: 0.02

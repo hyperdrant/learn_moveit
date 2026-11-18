@@ -1,0 +1,6 @@
+{
+  "package_name": "roarm_interfaces",
+  "non_idl_tuples": [
+    "/home/hyperdrant/learning_ros2/roarm_ws/src/roarm_interfaces:action/MoveJoints.action"
+  ]
+}

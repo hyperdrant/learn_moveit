@@ -1,0 +1,8 @@
+<!-- pluginlib 插件描述：告诉 ROS "roarm_control/RoArmHardware" 这个名字对应哪个类、在哪个库里 -->
+<library path="roarm_hardware">
+  <class name="roarm_control/RoArmHardware"
+         type="roarm_control::RoArmHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>RoArm-M2 hardware interface (sim + serial)</description>
+  </class>
+</library>

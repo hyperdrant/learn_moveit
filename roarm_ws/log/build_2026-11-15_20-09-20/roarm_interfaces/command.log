@@ -1,0 +1,4 @@
+Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces -- -j16 -l16
+Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces -- -j16 -l16
+Invoking command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces
+Invoked command in '/home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hyperdrant/learning_ros2/roarm_ws/build/roarm_interfaces

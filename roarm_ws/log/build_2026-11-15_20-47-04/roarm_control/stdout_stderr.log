@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target roarm_hardware[0m
+[100%] Built target roarm_hardware
+-- Install configuration: ""
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/roarm_hardware.xml
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/lib/libroarm_hardware.so
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include/roarm_control
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/include/roarm_control/roarm_hardware.hpp
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/urdf
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/urdf/roarm.urdf.xacro
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/config
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/config/controllers.yaml
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/launch
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/launch/control.launch.py
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/lib/roarm_control/send_trajectory.py
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/package_run_dependencies/roarm_control
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/parent_prefix_path/roarm_control
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/path.sh
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/environment/path.dsv
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.bash
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.sh
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.zsh
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/local_setup.dsv
+-- Installing: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/package.dsv
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/packages/roarm_control
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/roarm_control
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/cmake/roarm_controlConfig.cmake
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/cmake/roarm_controlConfig-version.cmake
+-- Up-to-date: /home/hyperdrant/learning_ros2/roarm_ws/install/roarm_control/share/roarm_control/package.xml

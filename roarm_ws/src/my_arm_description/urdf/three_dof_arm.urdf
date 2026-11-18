@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!--
+  RoArm-M2 简化模型：3 自由度（暂不含夹爪）
+  尺寸来自固件 RoArm-M2_config.h，关节零位和正方向与固件一致，
+  所以以后可以把真机读回的关节角直接发布到 /joint_states。
+
+  Kinematic Tree:
+    base_link
+       ↓ base_joint     (revolute, 绕 z：底座左右转 yaw)
+    turntable           L1 = 126.06 mm（底座转轴 → 肩关节的高度）
+       ↓ shoulder_joint (revolute, 绕 y：大臂俯仰 pitch，角度增大 → 前倾)
+    upper_arm           先竖直向上 L2A = 236.82 mm，再向前 L2B = 30 mm
+       ↓ elbow_joint    (revolute, 绕 y：小臂俯仰 pitch，角度增大 → 向下)
+    forearm             L3 = 280.15 mm（固件里 L3B = 1.73 mm，这里忽略）
+       ↓ tool_joint     (fixed)
+    tool0               小臂末端
+
+  每个 link 的 <collision> 和 <visual> 形状相同：
+  visual 给人看，collision 给 MoveIt 做碰撞检测。
+
+  零位（所有关节 = 0）：大臂竖直向上，小臂也竖直向上。
+  固件开机时的初始姿态是 elbow = 90°，此时小臂水平朝前。
+
+  为什么俯仰关节绕 y 而不是 x？
+    杆在零位沿 z 方向伸出，前方是 +x。绕 +y 转正角度时，z 轴会转向 +x，
+    也就是手臂向前倾。绕 x 转则是向侧面倒，不是我们想要的俯仰。
+-->
+<robot name="three_dof_arm">
+
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+    </material>
+    <material name="dark">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+    </material>
+    <material name="blue">
+        <color rgba="0.2 0.4 0.9 1.0"/>
+    </material>
+    <material name="orange">
+        <color rgba="1.0 0.5 0.1 1.0"/>
+    </material>
+
+    <!-- ======================== -->
+    <!-- Base（固定在桌面上） -->
+    <!-- ======================== -->
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 0.02"/>
+            <geometry>
+                <cylinder radius="0.06" length="0.04"/>
+            </geometry>
+            <material name="dark"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.02"/>
+            <geometry>
+                <cylinder radius="0.06" length="0.04"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Base joint：绕 z -->
+    <!-- ======================== -->
+
+    <joint name="base_joint" type="revolute">
+        <parent link="base_link"/>
+        <child link="turntable"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
+    </joint>
+
+    <!-- 转盘 + 立柱：从底座顶面一直到肩关节高度 L1 -->
+    <link name="turntable">
+        <visual>
+            <origin xyz="0 0 0.083"/>
+            <geometry>
+                <box size="0.05 0.07 0.086"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.083"/>
+            <geometry>
+                <box size="0.05 0.07 0.086"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Shoulder joint：绕 y -->
+    <!-- ======================== -->
+
+    <joint name="shoulder_joint" type="revolute">
+        <parent link="turntable"/>
+        <child link="upper_arm"/>
+        <origin xyz="0 0 0.12606" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-1.5708" upper="1.5708" effort="10" velocity="1.0"/>
+    </joint>
+
+    <!-- 大臂：零位时沿 +z 向上 L2A，顶端再向前 (+x) 偏 L2B -->
+    <link name="upper_arm">
+        <visual>
+            <origin xyz="0 0 0.11841"/>
+            <geometry>
+                <box size="0.03 0.04 0.23682"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.11841"/>
+            <geometry>
+                <box size="0.03 0.04 0.23682"/>
+            </geometry>
+        </collision>
+        <visual>
+            <origin xyz="0.015 0 0.23682"/>
+            <geometry>
+                <box size="0.03 0.04 0.03"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0.015 0 0.23682"/>
+            <geometry>
+                <box size="0.03 0.04 0.03"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Elbow joint：绕 y -->
+    <!-- ======================== -->
+
+    <joint name="elbow_joint" type="revolute">
+        <parent link="upper_arm"/>
+        <child link="forearm"/>
+        <origin xyz="0.030 0 0.23682" rpy="0 0 0"/>
+        <axis xyz="0 1 0"/>
+        <limit lower="-0.7854" upper="3.1416" effort="10" velocity="1.0"/>
+    </joint>
+
+    <!-- 小臂：零位时沿 +z 方向，长 L3 -->
+    <link name="forearm">
+        <visual>
+            <origin xyz="0 0 0.140075"/>
+            <geometry>
+                <box size="0.025 0.03 0.28015"/>
+            </geometry>
+            <material name="orange"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0.140075"/>
+            <geometry>
+                <box size="0.025 0.03 0.28015"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <!-- ======================== -->
+    <!-- Tool (末端坐标系) -->
+    <!-- ======================== -->
+
+    <joint name="tool_joint" type="fixed">
+        <parent link="forearm"/>
+        <child link="tool0"/>
+        <origin xyz="0 0 0.28015" rpy="0 0 0"/>
+    </joint>
+
+    <link name="tool0"/>
+
+</robot>

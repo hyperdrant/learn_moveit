@@ -1,0 +1,34 @@
+# OMPL（Open Motion Planning Library）规划管线配置
+planning_plugin: ompl_interface/OMPLPlanner
+
+# 规划前后依次执行的"适配器"
+#   AddTimeOptimalParameterization：规划器只输出一串关节角（路径），
+#       这个适配器根据 joint_limits.yaml 给每个点算出时间、速度、加速度，路径才变成轨迹
+#   FixStartStateBounds：起始状态稍微超出限位时（传感器噪声）把它拉回来
+#   FixStartStateCollision：起始状态刚好在碰撞里时，尝试小幅挪动
+request_adapters: >-
+  default_planner_request_adapters/AddTimeOptimalParameterization
+  default_planner_request_adapters/ResolveConstraintFrames
+  default_planner_request_adapters/FixWorkspaceBounds
+  default_planner_request_adapters/FixStartStateBounds
+  default_planner_request_adapters/FixStartStateCollision
+  default_planner_request_adapters/FixStartStatePathConstraints
+start_state_max_bounds_error: 0.1
+
+planner_configs:
+  # RRTConnect：从起点和终点各长一棵随机树，直到两棵树连上。快，最常用
+  RRTConnectkConfigDefault:
+    type: geometric::RRTConnect
+    range: 0.0  # 每次扩展的最大步长，0 = 自动
+  # RRT*：渐进最优，会在给定时间内不断把路径优化得更短，但更慢
+  RRTstarkConfigDefault:
+    type: geometric::RRTstar
+    range: 0.0
+    goal_bias: 0.05
+    delay_collision_checking: 1
+
+arm:
+  default_planner_config: RRTConnectkConfigDefault
+  planner_configs:
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault

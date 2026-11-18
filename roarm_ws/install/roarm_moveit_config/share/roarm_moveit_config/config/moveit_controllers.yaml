@@ -1,0 +1,25 @@
+# MoveIt 规划好轨迹后交给谁执行
+#
+# MoveItSimpleControllerManager 会把轨迹作为 FollowJointTrajectory action goal
+# 发给 /<controller 名>/<action_ns>，也就是 Week 3 的
+# /arm_controller/follow_joint_trajectory —— 和 send_trajectory.py 用的是同一个接口
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - arm_controller
+
+  arm_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - base_joint
+      - shoulder_joint
+      - elbow_joint
+
+# 执行监控：实际执行时间超过 "规划时间 × scaling + margin" 就认为失败
+trajectory_execution:
+  allowed_execution_duration_scaling: 1.2
+  allowed_goal_duration_margin: 0.5
+  allowed_start_tolerance: 0.02   # 开始执行时，实际状态和轨迹起点最多差多少 (rad)
